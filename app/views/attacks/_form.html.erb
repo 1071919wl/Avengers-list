@@ -1,0 +1,16 @@
+<%= form_for ([@villain, @attack]) do |f| %>
+
+  <%=f.label :Ability%>
+  <%=f.text_field :attack%>
+
+  <%=f.submit "Add Attack"%>
+<%end%>
+
+<%# this :attack here is pointing at the schema from migration %>
+
+
+
+
+
+
+

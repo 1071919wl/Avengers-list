@@ -1,0 +1,20 @@
+<h1>The Villains!</h1>
+
+<ul>
+  <% @villains.each do |villain|%>
+  <li>
+    <a href="<%=villain_url(villain)%>"><%= villain.name %></a>
+
+    <form action="<%=villain_url(villain)%>" method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <button type="submit">Remove</button>
+    </form>
+  </li>
+  <% end %>
+</ul>
+
+
+
+<a href="<%=new_villain_url%>">New Member</a>
+<br>
+<a href="<%=avengers_url%>">The Heroes</a>

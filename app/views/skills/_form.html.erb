@@ -1,0 +1,9 @@
+<%= form_for ([@avenger, @skill]) do |f| %>
+
+  <%=f.label :Ability%>
+  <%=f.text_field :skill%>
+
+  <%=f.submit "Add Skill"%>
+<%end%>
+
+<%# this :skill here is pointing at the schema from migration %>

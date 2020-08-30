@@ -1,0 +1,19 @@
+<h1>Edit Character</h1>
+
+<form action="<%=avenger_url(@avenger)%>" method="POST">
+  <input type="hidden" name="_method" value="PATCH">
+
+  <label>Name:
+    <input type="text" name="hero[name]">
+    <button type="submit">Edit</button>
+  </label>
+</form>
+
+
+
+
+
+<br>
+<a href="<%=avenger_url%>">Back</a>
+<br>
+<a href="<%=avengers_url()%>">Team List</a>

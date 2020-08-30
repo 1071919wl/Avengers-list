@@ -1,0 +1,14 @@
+<h1><%=@villain.name%><h1>
+
+  <h3>Power</h3>
+  <ul>
+    <%= render 'attacks/attack'%>
+  </ul>
+
+  <%= render 'attacks/form'%>
+
+
+
+<a href="<%=edit_villain_url%>">Edit</a>
+<br>
+<a href="<%=villains_url%>">The Villains</a>

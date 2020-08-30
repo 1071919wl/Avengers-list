@@ -1,0 +1,10 @@
+<h1>Edit Page</h1>
+
+<form action="<%=villain_url(@villain)%>" method="POST">
+  <input type="hidden" name="_method" value="PATCH">
+  <input type="text" name="villain[name]">
+  <button type="submit">Edit</button>
+</form>
+
+
+<a href="<%=villain_url()%>">Back</a>

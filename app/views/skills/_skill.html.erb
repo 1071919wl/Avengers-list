@@ -1,0 +1,9 @@
+
+<% @skills.each do |c| %>
+
+  <li>
+    <%= c.skill %>
+    <%= link_to "Delete", avenger_skill_path(c.avenger_id, c.id), method: :delete %>
+  </li>
+
+<%end%>

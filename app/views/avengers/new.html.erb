@@ -1,0 +1,23 @@
+<h1>Create New Avenger</h1>
+
+<!-- <form action="/avengers" method="POST">
+  <label>Name:
+    <input type="text" name="avenger[name]">
+    <button type="submit">Create</button>
+  </label>
+</form> -->
+
+
+<!-- -----or above will work as well -->
+
+<%= form_with model: @avenger do |f| %>
+
+  <%=f.label :Name%>
+  <%=f.text_field :name%>
+
+  <%=f.submit "Create"%>
+<%end%>
+
+
+<br>
+<a href="<%=avengers_url()%>">Team List</a>

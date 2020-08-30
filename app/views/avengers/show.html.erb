@@ -1,0 +1,19 @@
+
+<h1><%= @avenger.name %></h1>
+
+<h3>Power</h3>
+<ul>
+    <%= render 'skills/skill' %>
+</ul>
+
+
+<%= render 'skills/form'%>
+
+
+
+
+<a href="<%=edit_avenger_url%>">Edit Page</a>
+<br>
+<a href="<%=avengers_url()%>">Team List</a>
+
+

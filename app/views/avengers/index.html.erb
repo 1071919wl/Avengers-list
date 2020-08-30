@@ -1,0 +1,20 @@
+<h1>The Avengers!</h1>
+
+<ul>
+  <% @avengers.each do |avenger| %>
+    <li>
+      <a href="<%=avenger_url(avenger)%>"><%= avenger.name %></a>
+
+<!-- ------------------Delete button -->
+      <form action="<%= avenger_url(avenger) %>" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <button type="submit">Remove</button>
+      </form>
+    </li>
+  <% end %>
+</ul>
+
+
+<a href="<%= new_avenger_url %>">New Member</a>
+<br>
+<a href="<%= villains_url %>">The Villains</a>

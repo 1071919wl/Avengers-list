@@ -1,0 +1,9 @@
+<% @attacks.each do |a| %>
+
+  <li>
+    <%= a.attack %>
+    <%= link_to "Delete", villain_attack_path(a.villain_id, a.id), method: :delete %>
+  </li>
+
+<%end%>
+
